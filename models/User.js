@@ -4,7 +4,6 @@ module.exports = class User{
   static _client;
   static _tableName = 'users';
 
-
   static async findAll(){
     return this._client.query(`SELECT * FROM "${this._tableName}";`);
   }

@@ -48,8 +48,5 @@ async function start(){
     VALUES ${phonesToOrdersValuesString};
   `); 
 
-
   await client.end();
 }
-
-
